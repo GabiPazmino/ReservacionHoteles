@@ -4,17 +4,158 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reservación de Hoteles</title>
-    <meta name="description" content="App para la reservación de habitaciones en una cadena de hoteles">
+    <!-- meta google -->
+    <meta name="description" content="Reserva el hotel más barato en Miami según tus fechas preferidas. Compara tarifas para clientes regulares y con recompensas en tres hoteles de diferentes categorías. ¡Fácil, rápido y preciso!">
+    <!-- meta meta -->
+    <meta property="og:url"                content="http://www.nytimes.com/2015/02/19/arts/international/when-great-minds-dont-think-alike.html" />
+    <meta property="og:type"               content="article" />
+    <meta property="og:title"              content="When Great Minds Don’t Think Alike" />
+    <meta property="og:description"        content="How much does culture influence creative thinking?" />
+    <meta property="og:image"              content="http://static01.nyt.com/images/2015/02/19/arts/international/19iht-btnumbers19A/19iht-btnumbers19A-facebookJumbo-v2.jpg" />
 
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <header>
-        <nav></nav>
-        <img src="" alt="">
+    <header class="navbarHeader">
+        <nav class="navbar">
+            <h1 class="companyName">
+                <span class="miami">Miami</span>
+                <span class="hoteles">Hoteles</span>
+            </h1>
+            <div class="navbarContainerLinks">
+                <a href="#">Home</a>
+                <a href="#">Hoteles</a>
+                <a href="#">Contacto</a>
+                <a href="#">Idioma</a>
+            </div>
+        </nav>       
+     
     </header>
+
+    <section class="headerDescriptionContainer">
+        <div class="headerDescription">
+            <h2>Hoteles</h2>
+            <br>
+            <p>Compara tarifas para clientes regulares y con recompensas en nuestros hoteles. ¡Fácil y preciso, tú decides!</p>
+        </div>
+    </section>
     
-    <main></main>
+    <main>
+        <section class="hotelCards" id="lakewood">
+            <div class="containerImg">              
+                <img
+                  class="propertiesImg"
+                  src="../img/3.jpg"
+                  alt="casa grande con entrada de arena"
+                />                               
+            </div>
+
+            <div class="containerRates">
+              <h3>Miami Hoteles</h3>
+              <h2>Lakewood</h2>
+              <h4>estrellas</h4>
+              <div class="descriptionRates">
+                <p>Un lugar en el que podrás descanzar rodeado de lagunas y senderos. Con una vista maravillosa de toda la costa, rodeada de los lujos que siempre soñaste y una atención personalizada</p>
+                
+                <h6>Tarifas</h6>
+                
+                <ul>
+                  <li>Días de semana: $110 para cliente regular, $80 para cliente con
+                    recompensas. </li> 
+                    
+                  <li>Fines de semana: $90 para cliente regular, $80 para cliente con
+                    recompensas. </li>  
+                </ul>                 
+                
+                <button class="moreInfoButton">Más información</button>             
+            </div>
+            
+          </section>
+
+          <section class="hotelCards" id="bridgewood">
+            <div class="containerImg">              
+              <img
+                class="propertiesImg"
+                src="../img/2.jpg"
+                alt="casa grande con entrada de arena"
+              />                               
+            </div>
+
+            <div class="containerRatesLeft">
+              <h3>Miami Hoteles</h3>
+              <h2>Bridgewood</h2>
+              <h4>estrellas</h4>
+              <div class="descriptionRates">
+                <p>Un lugar en el que podrás descanzar rodeado de lagunas y senderos. Con una vista maravillosa de toda la costa, rodeada de los lujos que siempre soñaste y una atención personalizada</p>
+                
+                <h6>Tarifas</h6>
+                
+                <ul>
+                  <li>Días de semana: $160 para cliente regular, $110 para cliente con
+                    recompensas. </li> 
+                    
+                  <li>Fines de semana: $60 para cliente regular, $50 para cliente con
+                    recompensas. </li>  
+                </ul>                 
+                
+                <button class="moreInfoButton">Más información</button>             
+            </div>
+
+            
+            
+          </section>
+
+          <section class="hotelCards" >
+            <div class="containerImg">              
+                <img
+                  class="propertiesImg"
+                  src="../img/4.jpg"
+                  alt="casa grande con entrada de arena"
+                />                               
+            </div>
+
+            <div class="containerRates">
+              <h3>Miami Hoteles</h3>
+              <h2>Ridgewood</h2>
+              <h4>estrellas</h4>
+              <div class="descriptionRates">
+                <p>Un lugar en el que podrás descanzar rodeado de lagunas y senderos. Con una vista maravillosa de toda la costa, rodeada de los lujos que siempre soñaste y una atención personalizada</p>
+                
+                <h6>Tarifas</h6>
+                
+                <ul>
+                  <li>Días de semana: $220 para cliente regular, $100 para cliente con
+                    recompensas. </li> 
+                    
+                  <li>Fines de semana: $150 para cliente regular, $40 para cliente con
+                    recompensas. </li>  
+                </ul>                 
+                
+                <button class="moreInfoButton">Más información</button>             
+            </div>
+            
+          </section>
+
+          
+    </main>
+
+    <section class="reservationContainer">
+      <div>
+        <h5>Encuentra tu mejor Hotel</h5>
+        <form id="booking-form">
+          <label for="customer-type">Cliente:</label>
+          <select id="customer-type">
+              <option value="Regular">Regular</option>
+              <option value="Rewards">Con Recompensas</option>
+          </select>
+          <br><br>
+          <label for="dates">Ingresa tus fechas (separadas por comas):</label>
+          <input type="text" id="dates" placeholder="e.g., 16Mar2009(mon), 17Mar2009(tues)">
+          <br><br>
+          <button type="submit">Encuentra tu mejor tarifa</button>
+      </form>
+      </div>
+    </section>
     
     <footer></footer>
 
