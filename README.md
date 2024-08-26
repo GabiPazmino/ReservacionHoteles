@@ -27,6 +27,11 @@ o Tarifas:
 Escribe un programa que ayude a un cliente encontrar el hotel más barato. Se debe permitir ingresar una o más fechas para un cliente regular o con recompensas. La salida debe regresar
 el hotel más barato disponible entre el tipo de cliente y las fechas. En caso de empate, se debe devolver el hotel con la calificación más alta. La respuesta debe destacar en la lista de hoteles. 
 
+La estructura básica de la página es la siguiente:
+![web](https://github.com/user-attachments/assets/7e170bf6-0cbe-4f57-beb2-87d622b41072)
+
+
+
 Mostrar unn “toggle” para permitir al cliente seleccionar entre regular y con recompensas.
 ![web](https://github.com/user-attachments/assets/6852d0e0-b697-496b-bf13-86f4409979f4)
 
