@@ -1,6 +1,6 @@
 ## Aplicación para encontrar el mejor precio por fecha
 
-#Escenario:
+*Escenario:*
 
 Una cadena hotelera en Miami desea ofrecer servicios de reservación de habitaciones por internet. La cadena tiene tres hoteles: Lakewood, Bridgewood y Ridgewood. Cada hotel tiene tarifas diferentes para días de semana y fines de semana (sábado y domingo). Hay tarifas especiales para clientes con recompensas como parte del programa de lealtad. Cada hotel tiene una calificación asignada. 
 
@@ -37,7 +37,8 @@ La tarjeta de cada hotel debe contener:
 • Calificación como estrellas visuales 
 • Mostrar todas las posibles opciones de precios (regular, recompensas, días de semana y fines de semana).
 
-![web](https://github.com/user-attachments/assets/926e1bf5-17e3-4989-a118-42ffa2d32a9b)
+![web](https://github.com/user-attachments/assets/806d7006-6900-4c02-ace8-bdbcd62505bb)
+
 
 
 Se debe permitir ingresar diversas fechas
