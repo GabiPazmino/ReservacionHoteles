@@ -40,12 +40,8 @@ La tarjeta de cada hotel debe contener:
 ![web](https://github.com/user-attachments/assets/806d7006-6900-4c02-ace8-bdbcd62505bb)
 
 
+En la tarjeta de salida solo mostrar el precio con la fecha seleccionada. Se debe permitir ingresar diversas fechas
 
-Se debe permitir ingresar diversas fechas
-
-
-En la tarjeta de salida solo mostrar el precio con la fecha
-seleccionada. 
 
 
 
