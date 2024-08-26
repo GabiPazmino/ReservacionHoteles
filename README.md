@@ -54,6 +54,9 @@ En la tarjeta de salida solo mostrar el precio con la fecha seleccionada. Se deb
 
 las imágenes fueron tomadas de Pexels: https://www.pexels.com/es-ES/buscar/miami%20hotel/?orientation=landscape&size=large
 
+### se puede visualizar la página en: 
+**https://reservacion-hoteles.netlify.app/**
+
 
 
 
