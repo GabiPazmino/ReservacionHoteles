@@ -1,4 +1,4 @@
-# ** Aplicación para encontrar el mejor precio por fecha**
+# **Aplicación para encontrar el mejor precio por fecha**
 
 ## **Escenario:**
 
@@ -46,6 +46,9 @@ En la tarjeta de salida solo mostrar el precio con la fecha seleccionada. Se deb
 ![web](https://github.com/user-attachments/assets/fa146956-bbb6-4e1f-a57a-f72cad241a17)
 
 ![web](https://github.com/user-attachments/assets/ac50998b-9a62-441d-ac82-82f85d6d8a62)
+
+las imágenes fueron tomadas de Pexels: https://www.pexels.com/es-ES/buscar/miami%20hotel/?orientation=landscape&size=large
+
 
 
 
