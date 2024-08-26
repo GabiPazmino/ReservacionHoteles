@@ -29,7 +29,18 @@ const container = document.querySelector(".reservationContainer");
 const customerTypeInput = document.querySelector("#customerType");
 const dateInput = document.querySelector("#dates");
 
-
+// poner el numero de estrellasde cada hotel
+// Itera sobre cada hotel y actualiza el número de estrellas en el DOM
+hotels.forEach(hotel => {
+  // Busca el elemento <h4> dentro de la sección del hotel
+  const ratingElement = hotel.element.querySelector('.rating');
+  
+  // Crea un string con el número de estrellas según el rating
+  const stars = '★'.repeat(hotel.rating) + '☆'.repeat(5 - hotel.rating);
+  
+  // Actualiza el contenido del <h4> con el número de estrellas
+  ratingElement.textContent = stars;
+});
 
 
 // FUNCION PARA OBTENER EL HOTEL MÁS BARATO
@@ -85,11 +96,9 @@ resultDiv.innerHTML =
       <br>
       <h2>${bestHotel.name}</h2>
       <br>
-      <ul>
-          <li><strong>Tipo de cliente:</strong> ${customerType}</li>
+      <ul>          
           <li><strong>Fecha seleccionada:</strong> ${date}</li>
-          <li><strong>Tarifa:</strong> ${bestHotel.bestRate}</li>
-          <li><strong>Estrellas:</strong> ${bestHotel.rating}</li>
+          <li><strong>Tarifa:</strong> ${bestHotel.bestRate}</li>          
       </ul> 
     </div>   
     `;
