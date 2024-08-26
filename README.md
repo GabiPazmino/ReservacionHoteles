@@ -1,4 +1,4 @@
-## Aplicación para encontrar el mejor precio por fecha
+#* Aplicación para encontrar el mejor precio por fecha*
 
 #Escenario:
 Una cadena hotelera en Miami desea ofrecer servicios de reservación de habitaciones por internet. La cadena tiene tres hoteles: Lakewood, Bridgewood y Ridgewood. Cada hotel tiene tarifas diferentes para días de semana y fines de semana (sábado y domingo). Hay tarifas especiales para clientes con recompensas como parte del programa de lealtad. Cada hotel tiene una calificación asignada. 
