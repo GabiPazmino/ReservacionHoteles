@@ -28,9 +28,7 @@ const submitButton = document.querySelector("#submitButton");
 const container = document.querySelector(".reservationContainer");
 const customerTypeInput = document.querySelector("#customerType");
 const dateInput = document.querySelector("#dates");
-// const ridgewood = document.getElementById('ridgewood');
-// const lakewood = document.getElementById('lakewood');
-// const bridgewood = document.getElementById('bridgewood');
+
 
 
 
@@ -60,9 +58,7 @@ function getBestHotel(hotels, date, customerType) {
 submitButton.addEventListener('click', (event) => {
   event.preventDefault();
   
-  // Obtener los valores del formulario
-  // const dateInput = document.querySelector("#dates");
-  // const customerTypeInput = document.querySelector("#customerType");
+  // Obtener los valores del formulario  
   const date = dateInput.value;
   const customerType = customerTypeInput.value;
 
@@ -77,17 +73,7 @@ submitButton.addEventListener('click', (event) => {
   // CREO UN DIV PARA MOSTRAR EL RESULTADO
   let resultDiv = document.createElement("div");
   resultDiv.classList.add("resultDiv");
-
-  // AGREGAR LA INFORMACIÓN DEL HOTEL AL DIV
-  // resultDiv.textContent = 
-  //   `
-  //     <h3>Hotel Más Barato</h3>
-  //     <h2>${bestHotel.name}</h2>
-  //     <p><strong>Tipo de cliente:</strong> ${customerType}</p>
-  //     <p><strong>Fecha:</strong>${date}</p>
-  //     <p><strong>Tarifa:</strong> ${bestHotel.bestRate}</p>
-  //     <p><strong>Estrellas:</strong> ${bestHotel.rating}</p>
-  // `;
+  
 resultDiv.innerHTML = 
   `
     <div>
