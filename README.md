@@ -29,10 +29,10 @@ el hotel más barato disponible entre el tipo de cliente y las fechas. En caso d
 
 La estructura básica de la página es la siguiente:
 ![web](https://github.com/user-attachments/assets/7e170bf6-0cbe-4f57-beb2-87d622b41072)
+los elementos de la barra de navegación de redireccionaron a las diferentes secciones, salvo las opciones de idiomas que deberías ser direccionadas a otra página en inglés.
+Los elementos del footer deberían redireccionar a las páginas de los hoteles que contenga información más detallada (al igual que los botones de más información), y el correo debería abrir un editor para enviar el correo, no se lo hizo ya que son datos ficticios
 
-
-
-Mostrar unn “toggle” para permitir al cliente seleccionar entre regular y con recompensas.
+Mostrar un “toggle” para permitir al cliente seleccionar entre regular y con recompensas.
 ![web](https://github.com/user-attachments/assets/6852d0e0-b697-496b-bf13-86f4409979f4)
 
 
