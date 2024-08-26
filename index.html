@@ -24,15 +24,19 @@
             </h1>
             <div class="navbarContainerLinks">
                 <a href="#">Home</a>
-                <a href="#">Hoteles</a>
-                <a href="#">Contacto</a>
-                <a href="#">Idioma</a>
+                <a href="#hotels">Hoteles</a>
+                <a href="#contact">Contacto</a>
+                <!-- redirige a la página en español -->
+                <a href="#">ES</a>
+                <!-- redirige a la página en inglés -->
+                <a href="#">EN</a> 
+            </div>
             </div>
         </nav>       
      
     </header>
 
-    <section class="headerDescriptionContainer">
+    <section class="headerDescriptionContainer" >
         <div class="headerDescription">
             <h2>Hoteles</h2>
             <br>
@@ -40,12 +44,12 @@
         </div>
     </section>
     
-    <main>
+    <main id = "hotels">
         <section class="hotelCards" id="lakewood">
             <div class="containerImg">              
                 <img
                   class="propertiesImg"
-                  src="../img/3.jpg"
+                  src="../img/lakewood.jpg"
                   alt="casa grande con entrada de arena"
                 />                               
             </div>
@@ -55,7 +59,7 @@
               <h2>Lakewood</h2>
               <h4>estrellas</h4>
               <div class="descriptionRates">
-                <p>Un lugar en el que podrás descanzar rodeado de lagunas y senderos. Con una vista maravillosa de toda la costa, rodeada de los lujos que siempre soñaste y una atención personalizada</p>
+                <p>Situado en el corazón de Miami, el Hotel Lakewood ofrece una escapada cómoda y acogedora. Disfruta de habitaciones modernas y bien equipadas, y relájate en un entorno sereno. Ideal para quienes buscan conveniencia y calidad a un excelente precio, con un servicio amable y atento que garantiza una estancia placentera.</p>
                 
                 <h6>Tarifas</h6>
                 
@@ -67,26 +71,25 @@
                     recompensas. </li>  
                 </ul>                 
                 
-                <button class="moreInfoButton">Más información</button>             
-            </div>
-            
+                <button >Más información</button>             
+            </div>            
           </section>
 
           <section class="hotelCards" id="bridgewood">
             <div class="containerImg">              
               <img
                 class="propertiesImg"
-                src="../img/2.jpg"
+                src="../img/bridgewood.jpg"
                 alt="casa grande con entrada de arena"
               />                               
             </div>
 
-            <div class="containerRatesLeft">
+            <div class="containerRates">
               <h3>Miami Hoteles</h3>
               <h2>Bridgewood</h2>
               <h4>estrellas</h4>
               <div class="descriptionRates">
-                <p>Un lugar en el que podrás descanzar rodeado de lagunas y senderos. Con una vista maravillosa de toda la costa, rodeada de los lujos que siempre soñaste y una atención personalizada</p>
+                <p>Relájate en un oasis de tranquilidad rodeado del mar. Disfruta de una impresionante vista costera en total privacidad. Si te gusta disfrutar de la naturaleza y la vida en la costa, este es el lugar para ti. </p>
                 
                 <h6>Tarifas</h6>
                 
@@ -98,18 +101,15 @@
                     recompensas. </li>  
                 </ul>                 
                 
-                <button class="moreInfoButton">Más información</button>             
-            </div>
-
-            
-            
+                <button >Más información</button>             
+            </div>            
           </section>
 
-          <section class="hotelCards" >
+          <section class="hotelCards" id="ridgewood">
             <div class="containerImg">              
                 <img
                   class="propertiesImg"
-                  src="../img/4.jpg"
+                  src="../img/ridgewood.jpg"
                   alt="casa grande con entrada de arena"
                 />                               
             </div>
@@ -131,34 +131,72 @@
                     recompensas. </li>  
                 </ul>                 
                 
-                <button class="moreInfoButton">Más información</button>             
-            </div>
-            
-          </section>
-
-          
+                <button >Más información</button>             
+            </div>            
+          </section>          
     </main>
 
     <section class="reservationContainer">
-      <div>
-        <h5>Encuentra tu mejor Hotel</h5>
-        <form id="booking-form">
-          <label for="customer-type">Cliente:</label>
-          <select id="customer-type">
+      <div class="reservationContainerDiv">
+        <h5>Encuentra tu Mejor Hotel</h5>
+
+        <form id="bookingForm">                  
+          </label>  
+          <label for="customerType">
+            Tipo de Cliente: 
+            <br>
+            <select name="customerType" id="customerType">
+              <option value="" disabled selected>Seleccione un tipo de cliente</option>              
               <option value="Regular">Regular</option>
               <option value="Rewards">Con Recompensas</option>
-          </select>
+            </select>          
+         <br><br>
+          <label for="dates">
+            Ingresa tus fechas (separadas por comas): 
+            <br>
+            <input type="date" id="dates" >
+          </label>          
           <br><br>
-          <label for="dates">Ingresa tus fechas (separadas por comas):</label>
-          <input type="text" id="dates" placeholder="e.g., 16Mar2009(mon), 17Mar2009(tues)">
-          <br><br>
-          <button type="submit">Encuentra tu mejor tarifa</button>
-      </form>
+          
+          <button id="submitButton">Encuentra tu mejor tarifa</button>
+        </form>
       </div>
-    </section>
-    
-    <footer></footer>
+    </section>    
+    <br><br>
 
+    <footer id="contact">      
+      <div id="containerFooter">
+        <div class="item">
+          <ul>
+            <li class="companyName">              
+                <span class="miami">Miami</span>
+                <span class="hoteles">Hoteles</span>            
+            </li>            
+          </ul>
+        </div>
+        <div class="item">
+          <ul>
+            <li>Lakewood</li>
+            <li>Bridgewood</li>
+            <li>Ridgewood</li>
+          </ul>
+        </div>        
+
+        <div class="item">
+          <ul>
+            <li>Contáctanos</li>
+            <li >+1 55 6840 4000</li>
+            <li>hotels@miamihotels.com</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bar"></div>
+      <div id="copyright">       
+        <h4>Copyright © 2024</h4>
+      </div>      
+    </footer>  
+    
     
     <script src="./src/index.js"></script>
 </body>
