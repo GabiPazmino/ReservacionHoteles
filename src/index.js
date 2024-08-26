@@ -29,7 +29,7 @@ const container = document.querySelector(".reservationContainer");
 const customerTypeInput = document.querySelector("#customerType");
 const dateInput = document.querySelector("#dates");
 
-// poner el numero de estrellasde cada hotel
+// poner el numero de estrellas de cada hotel
 // Itera sobre cada hotel y actualiza el número de estrellas en el DOM
 hotels.forEach(hotel => {
   // Busca el elemento <h4> dentro de la sección del hotel
@@ -45,11 +45,13 @@ hotels.forEach(hotel => {
 
 // FUNCION PARA OBTENER EL HOTEL MÁS BARATO
 function getBestHotel(hotels, date, customerType) {
+  // Obtener el día de la semana
   const day = new Date(date).getDay();
   const isWeekend = (day === 0 || day === 6); // 0 = Domingo, 6 = Sábado
 
   let bestHotel = null;
-
+  
+  // Obtener el hotel más barato 
   hotels.forEach(hotel => {
       const rateType = isWeekend ? hotel.rates.weekend : hotel.rates.weekday;
       const rate = rateType[customerType];
@@ -102,7 +104,6 @@ resultDiv.innerHTML =
       </ul> 
     </div>   
     `;
-
   
   // AGREGO EL DIV AL CONTAINER PARA VISUALIZARLO
   container.appendChild(resultDiv);     
